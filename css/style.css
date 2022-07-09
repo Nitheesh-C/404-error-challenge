@@ -1,0 +1,161 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+main{
+    min-width: 100vh;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    /* position: relative; */
+}
+.main-section{
+    max-width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+.img-section{
+    width: 80%;
+}
+img{
+    max-width: 80%;
+    border-radius: 0px;
+}
+
+.content-section{
+    /* margin-left: 2rem; */
+}
+h1{
+    
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 95px;
+    letter-spacing: -0.035em; 
+    font-family: monospace,'Poppins', sans-serif;
+    /* Gray 1 */
+
+    color: #333333;
+
+}
+header{
+    min-width: 80%;
+    text-align: left;
+    justify-self: flex-start;
+}
+.error{
+    
+    /* max-width: 80%; */
+    /* padding: 30px 20px; */
+    font-weight: 600;
+    font-size: 1rem;
+    /* Gray 1 */
+
+    color: #333333;
+}
+p{
+    font-family: monospace,'Poppins', sans-serif;
+    text-align: left;
+    margin: 30px 0;
+    max-width: 400px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -0.035em;
+
+/* Gray 2 */
+
+    color: #4F4F4F;
+}
+button{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-family: monospace,'Poppins', sans-serif;
+    margin-top: 20px;
+    padding: 23px 43px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    /* identical to box height */
+
+    letter-spacing: -0.035em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+    background: #333333;
+}
+footer{
+    width: 100%;
+    
+}
+.footer p{
+    font-size: 1rem;
+    min-width: 100%;
+    text-align: center;
+}
+@media screen and (max-width:840px) {
+    .content-section{
+        margin-left: 0px;
+    }
+    h1{
+        font-size: 40px;
+        line-height: 4rem;
+    }
+    p{
+        margin: 30px 0;
+        font-size: 20px;
+        line-height: 2rem;
+    }
+    button{
+        padding: 15px 30px;
+        font-size: 13px;
+    }
+}
+@media screen and (max-width:500px) {
+    .main-section{
+        flex-direction: column;
+        margin: 3rem;
+    }
+    .img-section{
+        width: 100%;
+        text-align: center;
+    }
+    h1{
+        margin: 2rem 0 0 0;
+        font-size: 60px;
+        line-height: 1.5;
+    }
+    p{
+        margin: 30px 0;
+        font-size: 40px;
+        line-height: 1.3;
+        max-width: none;
+    }
+    button{
+        
+        padding: 25px 35px;
+        font-size: 18px;
+        
+    }
+}
+@media screen and (max-width:350px) {
+    .main-section{
+        min-width: 100%;
+        padding: 20px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    p{
+        font-size: 20px;
+    }
+    button{
+        padding: 20px 30px;
+        font-size: 15px;
+    }
+}
